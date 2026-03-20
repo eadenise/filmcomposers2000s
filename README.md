@@ -11,13 +11,13 @@ track‘, ‘isTrackOf‘, and ‘performedBy‘) with precisely scoped domains,
 ## Problems this Ontology Solves"
 
 Aside from automated logical inference, it solves the following:
-1. Cross-source inconsistency
+1. Cross-source inconsistency<br>
     Wikidata and MusicBrainz use different identifiers and schemas for the same entities. The ontology acts as a unified layer — merging a film's metadata from Wikidata with its track listings from MusicBrainz into one consistent graph, so you can verify that a soundtrack actually belongs to the right movie.
-2. Duplicate detection
+2. Duplicate detection<br>
   MusicBrainz returns multiple release groups for the same soundtrack (regional editions, deluxe versions). Without the ontology, you'd have no principled way to know these are the same thing. The filtering logic (keeping only the earliest "official" release) reduced duplicates by over 75%.
-3. Missing data identification
+3. Missing data identification<br>
     The ontology enforces that every Movie must have a soundtrack and composer. This constraint immediately exposed that "Frost/Nixon" and "How You Look to Me" had no MusicBrainz entries — something a plain database query might silently ignore.
-4. Logical consistency checking
+4. Logical consistency checking <br>
     Pellet's reasoner could detect contradictions automaticallyFor example, the performedBy domain/range bug where Movies were being inferred as Tracks. Without formal reasoning, that kind of silent misclassification would corrupt query results undetected.
 
 ## Data Collection and Integration
