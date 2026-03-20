@@ -10,7 +10,7 @@ track‘, ‘isTrackOf‘, and ‘performedBy‘) with precisely scoped domains,
 
 ## Problems this Ontology Solves
 
-Aside from automated logical inference, it solves the following:
+Aside from providing automated logical inference, it solves the following:
 1. Cross-source inconsistency<br>
     Wikidata and MusicBrainz use different identifiers and schemas for the same entities. The ontology acts as a unified layer — merging a film's metadata from Wikidata with its track listings from MusicBrainz into one consistent graph, so you can verify that a soundtrack actually belongs to the right movie.
 2. Duplicate detection<br>
