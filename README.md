@@ -8,7 +8,7 @@ This is a semantic framework that unifies film and music metadata through a purp
 core concepts: Movie, Soundtrack, Track, Composer, and Genre, into a clear class hierarchy and define a rich property structure (for example, ‘hasSound-
 track‘, ‘isTrackOf‘, and ‘performedBy‘) with precisely scoped domains, ranges,and characteristics such as functionality and transitivity.
 
-## Problems this Ontology Solves"
+## Problems this Ontology Solves
 
 Aside from automated logical inference, it solves the following:
 1. Cross-source inconsistency<br>
