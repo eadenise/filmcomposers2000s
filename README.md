@@ -30,7 +30,7 @@ Although MusicBrainz offers a SPARQL endpoint, it was nonfunctional for my needs
 and converted them into RDF triples. In this way, each soundtrack release group became an RDF entity, from which I extracted track titles, music-genre classifications, 
 and artist attributions, even when those artists differed from the composers.
 
-
+![data collection pipeline]([https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1](https://github.com/eadenise/filmcomposers2000s/blob/main/data_collection_pipeline.svg)")
 ## Ontology Design
 
 
