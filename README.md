@@ -1,5 +1,3 @@
-# Semantic Mapping of Early 2000s Movies and Soundtracks
-
 Skills: Python, Data Serialisation, Webscraping, SPARQL, Protege
 
 ## About this project
@@ -28,9 +26,10 @@ Wikidata Query Service was used to retrieve basic film metadata, constructing SP
 Unfortunately, it does not include detailed soundtrack information, such as track listings and performing artists, I turned to MusicBrainz for those data.
 Although MusicBrainz offers a SPARQL endpoint, it was nonfunctional for my needs, so I instead fetched the API’s JSON release-group responses
 and converted them into RDF triples. In this way, each soundtrack release group became an RDF entity, from which I extracted track titles, music-genre classifications, 
-and artist attributions, even when those artists differed from the composers.
+and artist attributions, even when those artists differed from the composers. <br>
+![data_collection_pipeline](https://github.com/eadenise/filmcomposers2000s/blob/main/data_collection_pipeline.svg)
 
-![data collection pipeline]([https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1](https://github.com/eadenise/filmcomposers2000s/blob/main/data_collection_pipeline.svg)")
+
 ## Ontology Design
 
 
